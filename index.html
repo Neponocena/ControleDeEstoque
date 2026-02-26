@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Toners</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Controle de Toners</h1>
+
+    
+    <fieldset>
+        <legend>Adicionar Novo Toner</legend>
+        <input type="text" id="nome" placeholder="Nome (ex.: Toner Preto)">
+        <input type="text" id="categoria" placeholder="Categoria (ex.: Toner/Unidade de imagem)">
+        <input type="text" id="modelo" placeholder="Modelo (ex.: CF258A)">
+        <input type="text" id="cor" placeholder="Cor (Se for tonner)">
+        <input type="number" id="quantidade" placeholder="Quantidade inicial">
+        <input type="number" id="estoqueMinimo" placeholder="Estoque mínimo">
+        <input type="text" id="impressora" placeholder="Impressora (ex.: HP LaserJet)">
+        <button onclick="adicionarItem()">Adicionar</button>
+    </fieldset>
+
+    
+    <h2>Estoque Atual</h2>
+    <table id="tabelaEstoque" border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Modelo</th>
+                <th>Cor</th>
+                <th>Quantidade</th>
+                <th>Mínimo</th>
+                <th>Impressora</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela"></tbody>
+    </table>
+
+    <script src="/js/arq.js"></script>
+</body>
+</html>
